@@ -1,1 +1,108 @@
-Hello World
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Tao Sasaki on github.io</title>
+        <meta content="This site is short introduction of me (Tao Sasaki). I try to some new web tools/way on here." title="description">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Lato:wght@300&display=swap');
+            :root {
+                --main-color: rgb(247, 104, 9);
+                --baseTextColor: #333;
+                --baseLinkColor: rgb(24, 40, 187);
+                --baseBgColor:#F9F9F9;
+                --negative-bg-color: #444643;
+                --negative-color: #FCFCFC;
+                --pane-padding: 5px 42px;
+                --baseFontSize: 4.2vw;
+                --bigFontSize1: 13.4vw;
+                --bigFontSize2: 2rem;
+                --bigFontSize2: 1.4rem;
+                --smallFontSize1: .9rem;
+                color: var(--baseTextColor);
+                background-color: var(--baseBgColor);
+                line-height: 1;
+            }
+            html, body{font-size: var(--baseFontSize); font-feature-settings: "palt";font-family: 'Lato', sans-serif;}
+            html, body,h1,h2,h3,h4,p,div,header,main,footer,ul,li,a,dl,dt,dd{margin: 0;padding:0;box-sizing: border-box;}
+            body{min-height: 100vh; position: relative;}
+            a{color:var(--baseLinkColor);text-decoration: none; transition: transform 400 ease-in;}
+            a:visited{filter: grayscale(.8);}
+            a:hover{filter: brightness(1.7);text-decoration: underline; transform: perspective(500px) translate3d(0,0,1.2); }
+            .container{ max-width: 100%; width: 100%; padding: 0 .5rem;}
+            h1,h2,h3{margin-top: 1em;margin-bottom: .6em;/*font-family: 'Fredericka the Great', cursive;*/}
+            ul,ol{ padding-left: 1.2em; margin-bottom:1rem;}
+            li{ margin-bottom: .5em; }
+            body > header{padding: 4rem 0;}
+            h1.pageTitle{ font-size:var(--bigFontSize1); text-shadow: 4px 4px #fff;}
+            #main_menu{padding: .5rem 0;}
+            #main_menu ul{display:flex; list-style: none;padding:0;}
+            #main_menu > ul > li{border-bottom: 1px dashed var(--main-color);}
+            #main_menu a{display: block;width: 100%; padding: .5rem;}
+            section p{ margin-bottom: 1em; line-height: 1.7em; }
+            body > footer{padding: 2rem 0; background-color:var(--negative-bg-color); color: var(--negative-color);position: absolute;bottom:0; width:100%;}
+            footer .linkSNS{
+                display: flex;
+                flex-wrap: wrap;
+                align-content: center;
+                justify-content: space-around;
+            }
+            .linkSNS a{color:var(--negative-color); font-weight:600;}
+            .copyright{text-align: center;}
+            @media screen and (min-width:780px) {
+                :root {
+                    --baseFontSize: 16px;
+                    --bigFontSize1: 4.2rem;
+                    --bigFontSize2: 2rem;
+                    --bigFontSize2: 1.4rem;
+                    --smallFontSize1: .9rem;
+                }
+                .container{ width: 780px; margin: 0 auto;}
+            }
+        </style>
+    </head>
+    <body>
+        <header id="pageHeader">
+            <div class="container">
+                <h1 class="pageTitle">Tao Sasaki on github.io</h1>
+                <p>This web site is a sandbox of me.</p>
+            <!--
+                <nav id="main_menu" role="menubar">
+                    <ul>
+                        <li role="menuitem"><a href="" title="To the home page">HOME</a></li>
+                    </ul>
+                </nav>
+            -->
+            </div>
+        </header>
+        <main>
+            <section>
+                <div class="container">
+                    <h2>Who am I</h2>
+                    <p>Hi. I'm Tao Sasaki, a developper of web site and web apps.</p>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <h2>Contribute to</h2>
+                    <p><a href="https://www.ec-cube.net" target="_blank" title="Most popular Open Source CMS for eCommerce in Japan">EC-CUBE</a>, <a href="https://www.concretecms.org/" target="_blank" title="Rich and Intuitive Open Source CMS">Cncrete CMS(concrete5)</a></p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <ul class="linkSNS">
+                    <li><a href="https://twitter.com/tao_s" title="Twitter"arget="_blank">Twitter</a></li>
+                    <li><a href="https://github.com/tao-s" title="Github"arget="_blank">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/taosasaki" title="Linkedin"arget="_blank">Linkedin</a></li>
+                </ul>
+            </div>
+            <p class="container copyright"><small>Copyright&copy; 2021 Tao Sasaki. All Rights Reserved</small></p>
+        </footer>
+        <script>
+            document.addEventListener('DOMContentLoad',(e)=>{
+
+            })
+        </script>
+    </body>
+</html>
